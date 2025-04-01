@@ -1,0 +1,10 @@
+name: call reusable workflow
+
+on:
+ push:
+   branches: ["main"]
+
+jobs:
+  call-reusable-workflow:
+    uses: colchetedao/actionPlayground/.github/workflows/curl.yml@main
+    secrets: inherit
